@@ -1,443 +1,265 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+<html>
 
-<link rel="stylesheet" href="style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-<script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+<head>
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="main.scss">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="libs/vector.js" async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+
 
 </head>
-<body>
-        <h1 class="ml15">
-                <span class="word">AAQUIB</span>
-                <span class="word">NADKAR</span>
-              </h1>
-              <h2 class="ml14">
-                    <span class="word">SOFTWARE</span>
-                    <span class="word">DEVELOPER</span>
-                  </h2>
-            
-                      <script>
-        // Wrap every letter in a span
-     anime.timeline({loop: true})
-  .add({
-    targets: '.ml15 .word',
-    scale: [14,1],
-    opacity: [0,1],
-    easing: "easeOutCirc",
-    duration: 800,
-    delay: function(el, i) {
-      return 800 * i;
-    }
-  }).add({
-    targets: '.ml15',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
-  anime.timeline({loop: true})
-  .add({
-    targets: '.ml14 .word',
-    scale: [14,1],
-    opacity: [0,1],
-    easing: "easeOutCirc",
-    duration: 800,
-    delay: function(el, i) {
-      return 800 * i;
-    }
-  }).add({
-    targets: '.ml14',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
- 
- 
-        </script>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<!-- ----------------------------START OF NAVBAR---------------------------------------------------------------------------- -->
+  <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#" style="text-shadow:2px 2px #EFB311;color:#EFB311;;">
+          AAQUIB
+        </a>
+      </div>
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home" class="links">HOME</a></li>
+            <li><a href="#about" class="links">ABOUT</a></li>
+            <li><a href="#service" class="links"> SERVICE</a></li>
+            <li><a href="#portfolio" class="links">PORTFOLIO</a></li>
+            <li><a href="#resume" class="links">RESUME</a></li>
+            <li><a href="#skill" class="links">SKILL</a></li>
+            <li><a href="#contact" class="links">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav> -->
+<!-- ----------------------------END OF NAVBAR---------------------------------------------------------------------------- -->
+
+<!-- ----------------------------START OF HOME SECTION--------------------------------------------------------------------------- -->
+
+  <section id="home" data-value ="home" class="container-fluid">
+      <nav class="navbar navbar-inverse navbar-fixed-top bclr">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <!-- <a class="navbar-brand" href="#" style="text-shadow:2px 2px #EFB311;color:#EFB311;;">
+                AAQUIB
+              </a> -->
+            </div>
+            <div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#home" class="links" >HOME</a></li>
+                  <li><a href="#about"  class="links" >ABOUT</a></li>
+                  <li><a href="#service" class="links"> SERVICE</a></li>
+                  <li><a href="#portfolio" class="links">PORTFOLIO</a></li>
+                  <li><a href="#resume" class="links">RESUME</a></li>
+                  <li><a href="#skill" class="links">SKILL</a></li>
+                  <li><a href="#contact" class="links">CONTACT</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+    <div id="particle-canvas"> </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6-xs-12-lg-6-xl-6-sm-12">
+        </div>
+        <div class="col-md-6-xs-12-lg-6-xl-6-sm-12">
+          <!-- <div class="desig1"> <span style ="color:#EFB311;">&#x2190;</span> &nbsp; Hi I Am Aaquib Nadkar</div> -->
+          <div class="desig">Hi I Am   <span
+            class="txt-rotate"
+            data-period="2000"
+            data-rotate='[ "Aaquib Nadkar", "Software Engineer", "Web Developer", "Programmer" ]'></span></div>
+          <!-- <a href="docs/NadkarAaquib_Resume.docx"><button type="button" class="btn btn-default resume">RESUME</button></a> -->
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+<!-- ----------------------------END OF HOME SECTION--------------------------------------------------------------------------- -->
+
+
+<!-- ----------------------------START OF HOME SECTION--------------------------------------------------------------------------- -->
+
+<!-- ----------------------------START OF ABOUT SECTION--------------------------------------------------------------------------- -->
+
+
+  <section id="about" data-value ="about" class="container-fluid">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12-xs-12-lg-12-xl-12-sm-12">
+          <h2 class ="abt">About Me</h2><br>
+          <p class ="info">I am dedicated and hardworking person,love to work in different technologies. My objective is to obtain a challenging career in an organization where I can get an opportunity to explore my logical, technical and management skills and grow as an individual, professionally & personally. </p><br>
+        </div>
+      </div><br>
+      <div class="row">
+          <div class="row">
+              <div class="col-sm-6" >
+                  <div class="card">
+                      <h4 class ="title">Web Developement </h4> <br>
+                      <p class ="content">Developing Website and Web applications using web technologies and their frameworks</p> 
+                      <p class="content"><b>Name:</b>&emsp;Aaquib Nadkar</p>
+                      <p class="content"><b>Email:</b>&emsp; nadkaraauib@gmail.com<p>
+                      <p class="content"><b>Phone:</b>&emsp;9930111720</p><br>
+                      <a href="docs/NadkarAaquib_Resume.docx"><button type="button" class="btn btn-default cv">DOWNLOAD CV</button></a>
+                      <a href="#home"><button type="button" class="btn btn-default hire">HIRE</button></a>
+                    </div>
+                  
+              </div>
+              <div class="col-sm-6">
+                  <div class="card">
+                      <h4 class ="title">Web Developement </h4> <br>
+                      <p class ="content">Developing Website and Web applications using web technologies and their frameworks</p> 
+                      <p class="content"><b>Name:</b>&emsp;Aaquib Nadkar</p>
+                      <p class="content"><b>Email:</b>&emsp; nadkaraauib@gmail.com<p>
+                      <p class="content"><b>Phone:</b>&emsp;9930111720</p><br>
+                      <a href="docs/NadkarAaquib_Resume.docx"><button type="button" class="btn btn-default cv">DOWNLOAD CV</button></a>
+                      <a href="#home"><button type="button" class="btn btn-default hire">HIRE</button></a>
+                    </div>
+              </div>
+      </div>
+    <!-- </div> -->
+      </div>
+
+  </section>
+
+  <!-- ----------------------------END OF ABOUT SECTION--------------------------------------------------------------------------- -->
+
+  <!-- ----------------------------START OF SERVICE SECTION--------------------------------------------------------------------------- -->
+
+  <section id="service" data-value ="service" class="container-fluid">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card1">
+             <img src="images/web.png" class ="web-img"><br>
+             <div class ="content1">Website</div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card1">
+              <img src="images/web.png" class ="web-img"><br>
+              <div class ="content1">Web Application</div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+              <div class="card1">
+                <img src="images/web.png" class ="web-img"><br>
+                <div class ="content1">Mobile Application</div>
+              </div>
+            </div>
+      
+      </div>
+    </div>
+  </section>
+
+  <!-- ----------------------------END OF SERVICE SECTION--------------------------------------------------------------------------- -->
+
+  <!-- ----------------------------START OF PORTFOLIO SECTION--------------------------------------------------------------------------- -->
+
+  <section id="portfolio" data-value ="portfolio" class="container-fluid">
+    <h1>Section 4</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+      at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+      at the navigation bar while scrolling!</p>
+  </section>
+
+    <!-- ----------------------------END OF PORTFOLIO SECTION--------------------------------------------------------------------------- -->
+
+    <!-- ----------------------------START OF RESUME SECTION--------------------------------------------------------------------------- -->
+
+  <section id="resume" data-value ="resume" class="container-fluid">
+    <h1>Section 5</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+      at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+      at the navigation bar while scrolling!</p>
+  </section>
+
+    <!-- ----------------------------START OF RESUME SECTION--------------------------------------------------------------------------- -->
+
+    <!-- ----------------------------START OF SKILL SECTION--------------------------------------------------------------------------- -->
+
+  <section id="skill" data-value ="resume" class="container-fluid">
+    <h1>Section 6</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+      at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+      at the navigation bar while scrolling!</p>
+  </section>
+
+    <!-- ----------------------------END OF SKILL SECTION--------------------------------------------------------------------------- -->
+
+    <!-- ----------------------------START OF CONTACT SECTION--------------------------------------------------------------------------- -->
+
+  <section id="contact" data-value ="contact" class="container-fluid">
+    <h1>Section 7</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+      at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+      at the navigation bar while scrolling!</p>
+  </section>
+    <!-- ----------------------------END OF CONTACT SECTION--------------------------------------------------------------------------- -->
+
+
+
+  <script src="js/main.js" defer></script>
+  <script>
+    $(document).ready(function () {
+    });
+    (function ($) {
+  $(document).ready(function(){
+
+    // hide .navbar first
+
+
+
+    // fade in .navbar
+    $(function () {
+        $(window).scroll(function () {
+
+
+                 // set distance user needs to scroll before we start fadeIn
+            if ($(this).scrollTop() > 100) {
+                $('.navbar').removeClass('bclr').fadeIn();
+
+            } else {
+                // $('.navbar').fadeOut();
+                $('.navbar').addClass('bclr').fadeIn();
+
+            }
+
+        });
+    });
+
+});
+  }(jQuery));
+  
+  
+
+  </script>
 
 </body>
+
 </html>
-=======
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Spinning Wheel</title><base href="/"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel="icon" type="image/x-icon" href="favicon.ico"><link rel="stylesheet" href="assets/icons/iconsmind_ultimate/fonts//styles.min.css"><link rel="stylesheet" href="assets/css/lightboxgallery-min.css"><link rel="stylesheet" href="assets/css/lstyle.css"><link rel="stylesheet" href="assets/css/style1.css"><link rel="stylesheet" href="assets/css/fullpage.css"><link rel="stylesheet" href="assets/icons/icons.css"><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700%7CMontserrat:300,400,600,700"><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><style>.row_first{
-        margin: -16% 0px 0px 65px;
-      }
-    
-      .row_second{
-        margin: -60px 0px 0px -32px;
-      }
-    
-      .row_third{
-        margin: -60px 0px 0px 65px;
-      }
-    
-      .element_margin{
-        margin: 38px -3px -8px 53px;
-      }
-    
-    
-        .element {
-          margin: 38px 13px -8px 53px;
-             position:relative;
-             overflow:hidden;
-                display: inline-block;
-                background-size: cover;
-                height: 130px;
-                width: 130px;
-                transform: rotate(45deg);
-            }
-    
-    
-    
-            @media screen and (min-width: 1000px) {
-    
-              .aboutushome {
-        position: absolute;
-        top: 12%;
-        left: 0;
-    }
-    
-    .aboutush h3 {
-        color: #FFF;
-        margin-bottom: 0.2rem;
-        font-size: 14px;
-    }
-    
-    .aboutush p {
-        color: #FFF;
-        margin-bottom: 0px;
-        line-height: 12px;
-        font-size: 10px;
-    }
-    
-    .aboutush {
-        position: absolute;
-        top: 50px;
-        left: 122px;
-        color: #FFF !important;
-    }
-    
-    
-    .element {
-        margin: 38px 13px -8px 53px;
-        position: relative;
-        overflow: hidden;
-        display: inline-block;
-        background-size: cover;
-        height: 75px;
-        width: 75px;
-        transform: rotate(45deg);
-    }
-    
-    
-    .row_first {
-        margin: -10% 0px 0px 0px;
-    }
-    
-    .row_second {
-        margin: -42px 0px 0px -70px;
-    }
-    
-    .row_third {
-        margin: -47px 0px 0px 0px;
-    }
-      }
-    
-    
-    
-    
-    
-            @media screen and (min-width: 1200px) {
-    
-              .aboutushome {
-        position: absolute;
-        top: 12%;
-        left: 0;
-    }
-    
-    .aboutush h3 {
-        color: #FFF;
-        margin-bottom: 0.2rem;
-        font-size: 14px;
-    }
-    
-    .aboutush p {
-        color: #FFF;
-        margin-bottom: 2px;
-        line-height: 15px;
-        font-size: 12px;
-    }
-    
-    .aboutush {
-        position: absolute;
-        top: 65px;
-        left: 122px;
-        color: #FFF !important;
-    }
-    
-    
-    .element {
-        margin: 38px 13px -8px 53px;
-        position: relative;
-        overflow: hidden;
-        display: inline-block;
-        background-size: cover;
-        height: 100px;
-        width: 100px;
-        transform: rotate(45deg);
-    }
-    
-    
-    .row_first{
-      margin: -10% 0px 0px 40px;
-    }
-    
-    .row_second{
-      margin: -52px 0px 0px -40px;
-    }
-    
-    .row_third{
-      margin: -55px 0px 0px 40px;
-    }
-    
-      }
-    
-      @media screen and (min-width: 1300px) {
-    
-        .aboutushome {
-    position: absolute;
-    top: 12%;
-    left: 0;
-    }
-    
-    .aboutush h3 {
-    color: #FFF;
-    margin-bottom: 0.2rem;
-    font-size: 14px;
-    }
-    
-    .aboutush p {
-    color: #FFF;
-    margin-bottom: 2px;
-    line-height: 15px;
-    font-size: 12px;
-    }
-    
-    .aboutush {
-        position: absolute;
-        top: 80px;
-        left: 132px;
-        color: #FFF !important;
-    }
-    
-    
-    .element {
-    margin: 38px 13px -8px 53px;
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-    background-size: cover;
-    height: 100px;
-    width: 100px;
-    transform: rotate(45deg);
-    }
-    
-    
-    .row_first{
-    margin: -10% 0px 0px 40px;
-    }
-    
-    .row_second{
-    margin: -52px 0px 0px -40px;
-    }
-    
-    .row_third{
-    margin: -55px 0px 0px 40px;
-    }
-    
-    }
-    
-    
-    
-            @media screen and (min-width: 1400px) {
-    
-              .aboutushome {
-            position: absolute;
-            top: 12%;
-            left: 0;
-            }
-    
-            .aboutush h3 {
-        color: #FFF;
-        margin-bottom: 0.2rem;
-        font-size: 16px;
-    }
-    
-            .aboutush p {
-            color: #FFF;
-            margin-bottom: 2px;
-            line-height: 15px;
-            font-size: 12px;
-            }
-    
-            .aboutush {
-        position: absolute;
-        top: 90px;
-        left: 135px;
-        color: #FFF !important;
-    }
-    
-    
-            .element {
-            margin: 38px 13px -8px 53px;
-            position: relative;
-            overflow: hidden;
-            display: inline-block;
-            background-size: cover;
-            height: 100px;
-            width: 100px;
-            transform: rotate(45deg);
-            }
-    
-    
-            .row_first {
-        margin: -10% 0px 0px 42px;
-    }
-    
-    .row_second {
-    margin: -55px 0px 0px -43px;
-    }
-    
-    .row_third {
-    margin: -54px 0px 0px 39px;
-    }
-    
-    
-      }
-      @media screen and (min-width: 1600px) {
-    
-        .aboutushome {
-      position: absolute;
-      top: 12%;
-      left: 0;
-      }
-    
-      .aboutush h3 {
-    color: #FFF;
-    margin-bottom: 0.2rem;
-    font-size: 20px;
-    }
-    
-      .aboutush p {
-      color: #FFF;
-      margin-bottom: 2px;
-      line-height: 18px;
-      font-size: 14px;
-      }
-    
-      .aboutush {
-    position: absolute;
-    top: 90px;
-    left: 155px;
-    color: #FFF !important;
-    }
-    
-    
-      .element {
-      margin: 38px 13px -8px 53px;
-      position: relative;
-      overflow: hidden;
-      display: inline-block;
-      background-size: cover;
-      height: 130px;
-      width: 130px;
-      transform: rotate(45deg);
-      }
-    
-    
-      .row_first {
-        margin: -8% 0px 0px 54px;
-    }
-    
-    .row_second {
-        margin: -60px 0px 0px -46px;
-    }
-    
-    .row_third {
-        margin: -57px 0px 0px 53px;
-    }
-    
-    
-      }
-    .service-block-list
-    {
-      max-width: 800px;
-      margin-left: 10%;
-    }
-    
-    .coppyright_txt{
-        color: white;
-    }
-    
-    .modal-dialog {
-        max-width: 800px;
-        margin: 1.75rem auto;
-    }
-    #section0 {padding-top:30px;height:300px;};
-    #section1 {padding-top:30px;height:300px;};
-    #section2 {padding-top:30px;height:300px;};
-    #section3 {padding-top:30px;height:300px;};
-    #section4 {padding-top:30px;height:300px;};
-    #section5 {padding-top:30px;height:300px;};
-    #section6 {padding-top:30px;height:300px;};
-    #section7 {padding-top:30px;height:300px;};
-body{
-    position:relative;
-}</style><link href="styles.dc7841c9e9cdf27209f9.bundle.css" rel="stylesheet"/></head><body data-spy="scroll" data-target=".sidebar-nav" data-offset="50"><app-root></app-root><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><!-- <script src ="assets/js/examples.js"></script> --><!-- <script src ="assets/js/fullpage.js"></script> --><script type="text/javascript">// var myFullpage = new fullpage('#fullpage', {
-    //     sectionsColor: ['#dae0e0', '#f0f0f0', '#dae0e0', '#f0f0f0', '#dae0e0', '#f0f0f0', '#dae0e0', '#f0f0f0'],
-    //     anchors: ['section0', 'section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7'],
-    //     menu: '#menu',
-
-    //     //equivalent to jQuery `easeOutBack` extracted from http://matthewlein.com/ceaser/
-    //     easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
-    // });</script><script type="text/javascript">//     $(document).ready(function() {
-        //   // Gets the video src from the data-src on each button
-        //   var $videoSrc;
-        //   $('.video-btn').click(function() {
-        //       $videoSrc = $(this).data( "src" );
-        //   });
-        //   console.log($videoSrc);
-        //   // when the modal is opened autoplay it
-        //   $('#myModal').on('shown.bs.modal', function (e) {
-
-        //   // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
-        //   $("#video").attr('src',$videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1" );
-        //   })
-        //   // stop playing the youtube video when I close the modal
-        //   $('#myModal').on('hide.bs.modal', function (e) {
-        //       // a poor man's stop video
-        //       $("#video").attr('src',$videoSrc);
-        //   })
-        //   // document ready
-        //   });</script><script type="text/javascript">$(document).ready(function() {
-           
-
-             $("a").click(function (){
-               
-            //     var anclink = $(this).attr('href');
-
-            //     $('html, body').animate({
-            //         scrollTop: $(anclink).offset().top
-            //     }, 2000);
-            });
-        
-
-        });</script><script src="assets/js/jquery-3.3.1.min.js"></script><script src="assets/js/lightboxgallery.js"></script><script src="assets/js/afterglow.min.js"></script><script src="assets/js/circle-progress.min.js"></script><script src="assets/js/jquery-asRange.min.js"></script><script src="assets/js/jquery.flexslider-min.js"></script><script src="assets/js/navigation.js"></script><!-- <script src ="assets/js/script-dashboard.js"></script> --><!-- <script src ="assets/js/script.js"></script> --><script src="assets/js/popper.min.js"></script><script type="text/javascript" src="inline.bf277270df4209e6afcd.bundle.js"></script><script type="text/javascript" src="polyfills.c269d430d91ba36ab4d1.bundle.js"></script><script type="text/javascript" src="scripts.4ecb61e8942c4d498e60.bundle.js"></script><script type="text/javascript" src="vendor.4fde436714f3353225a3.bundle.js"></script><script type="text/javascript" src="main.c09cd8b2ab8b8edffd9f.bundle.js"></script></body></html>
->>>>>>> 1bb792d719db7cfff5fb6e72c9351eb52d594d40

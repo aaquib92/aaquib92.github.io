@@ -1,0 +1,283 @@
+@font-face {
+    font-family: "CircularStdBook";
+    src: url("/fonts/CircularStd-Book.otf");
+  }
+  
+  @font-face {
+    font-family: "CircularStdMedium";
+    src: url("/fonts/CircularStd-Medium.otf");
+  }
+  
+  @font-face {
+    font-family: "CircularStdBold";
+    src: url("/fonts/CircularStd-Bold.otf");
+  }
+  
+  @font-face {
+    font-family: "CircularStdBlack";
+    src: url("/fonts/CircularStd-Black.otf");
+  }
+
+
+
+
+.table-of-contents a.active {
+    color:#ffffff !important;
+    border-left:none !important;
+    background: rgba(0,0,0,0.1) !important;
+
+
+  }
+  .table-of-contents a {
+      color:#ffffff !important;
+
+
+  }
+  /* .section{
+      padding-top:0 !important;
+      padding-bottom:0 !important;
+  } */
+  .custom-nav li a {
+    font-family: "Roboto",sans-serif;
+  }
+  .navbar-fixed nav {
+    background-color: #ba68c8;
+  }
+  .ps {
+      margin-right:10% !important;
+  }
+  .desig {
+    font-size: 4em;
+    color: #ffffff;
+    font-family: CircularStdBook;
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+    text-align: center;
+    margin-top:10%;
+  }
+  
+.btn, .btn-large{
+    background-color: #ba68c8 !important;
+
+}
+.aln{
+    margin-top:5%;
+}
+.profile-img {
+    border: 5px solid #fff;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    height: 130px;
+    margin: 0 auto;
+    width: 140px;
+    margin-top:25%;
+}
+
+.abt-me{
+    color:#ba68c8 ;
+    font-family: CircularStdMedium;
+    font-size:2rem;
+    text-shadow: 1px 1px #ba68c8;
+    margin-top:7% !important;
+    margin-left:5% !important;
+}
+.skl-tl{
+  color:#ba68c8 ;
+  font-family: CircularStdMedium;
+  font-size:2rem;
+  text-shadow: 1px 1px #ba68c8;
+  margin-top:7% !important;
+}
+.pr-info{
+    color:#ba68c8 ;
+    font-family: CircularStdMedium;
+    font-size:2rem;
+    text-shadow: 1px 1px #ba68c8;
+    margin-top:7% !important;
+    margin-left:5% !important;
+
+}
+.collection{
+    width:60% !important;
+    border:none !important;
+}
+.collection .collection-item {
+    background-color:transparent !important;
+    margin-left:5% !important;
+    color:#848484 !important;
+    font-family:CircularStdBook !important;
+    font-size:1rem !important;
+}
+.flex{
+    display:flex;
+    flex-direction: row;
+}
+.gap{
+margin-left:10%;
+}
+
+progress, progress[role] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-size: auto;
+  height: 30px;
+  width: 100%;
+}
+
+
+.skill-list {
+  list-style: none;
+  margin: 0;
+  padding: 1em;
+}
+
+.skill {
+  margin-bottom: 1em;
+  position: relative;
+}
+  h3 {
+    color: #fff;
+    left: 1em;
+    line-height: 1;
+    position: absolute;
+    top: 1em;
+  }
+  ::-webkit-progress-value { 
+    -webkit-animation: bar-fill 2s;
+    width: 0px;
+  }
+
+
+.skill-1::-webkit-progress-value {
+  background: #ba68c8;
+}
+
+.skill-1::-moz-progress-bar {
+  background: #ba68c8;
+}
+
+.skill-2::-webkit-progress-value {
+  background: #ba68c8;
+}
+
+.skill-2::-moz-progress-bar {
+  background: #ba68c8;
+}
+
+.skill-3::-webkit-progress-value {
+  background: #ba68c8;
+}
+
+.skill-3::-moz-progress-bar {
+  background: #ba68c8;
+}
+.skill-4::-webkit-progress-value {
+  background: #ba68c8;
+}
+
+.skill-4::-moz-progress-bar {
+  background: #ba68c8;
+}
+.skill-5::-webkit-progress-value {
+  background: #ba68c8;
+}
+
+.skill-5::-moz-progress-bar {
+  background: #ba68c8;
+}
+.skill-6::-webkit-progress-value {
+  background: #ba68c8;
+}
+
+.skill-6::-moz-progress-bar {
+  background: #ba68c8;
+}
+
+.skill-7::-webkit-progress-value {
+  background: #ba68c8;
+}
+
+.skill-7::-moz-progress-bar {
+  background: #ba68c8;
+}
+.skill-8::-webkit-progress-value {
+  background: #ba68c8;
+}
+
+.skill-8::-moz-progress-bar {
+  background: #ba68c8;
+}
+
+
+
+
+@-webkit-keyframes bar-fill {
+  0% { width: 0; }
+}
+
+@keyframes bar-fill {
+  0% { width: 0; }
+}
+
+.txt{
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: CircularStdBook;
+}
+
+.exp{
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: CircularStdMedium;
+  text-shadow: 1px 1px #ffffff;
+  margin-top:7%;
+}
+
+.exp-txt{
+  color: #ffff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: CircularStdBook;
+}
+.experience-title {
+  border-bottom: 1px solid #eee;
+  color: #727272;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #ba68c8;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
+.page-footer{
+  background: #00000096 !important;
+}
