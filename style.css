@@ -2,34 +2,27 @@
   font-family: "CircularStdBook";
   src: url("/fonts/CircularStd-Book.otf");
 }
-
 @font-face {
   font-family: "CircularStdMedium";
   src: url("/fonts/CircularStd-Medium.otf");
 }
-
 @font-face {
   font-family: "CircularStdBold";
   src: url("/fonts/CircularStd-Bold.otf");
 }
-
 @font-face {
   font-family: "CircularStdBlack";
   src: url("/fonts/CircularStd-Black.otf");
 }
-
-
 body {
   position: relative; 
   height:100%;
   margin:0;
-
 }
 .bclr{
   background-color: transparent !important;
   border-color:transparent !important;
 }
-
 #home {
   width: 100%;
   /* height:500px; */
@@ -47,12 +40,10 @@ body {
   height: 100%;
   width: 100%;
 }
-
 #about {
   padding-top: 50px;
   background-color: #fafafa;
 }
-
 #portfolio {
   color: #000;
   background-color: #ffffff;
@@ -60,31 +51,26 @@ body {
 #experience {
   color: #fff;
   /* height: 500px; */
-  background-color: #ba68c8;
+  background-color: #5587f9;
 }
 #resume {
   color: #fff;
   background-color: #fafafa;
 }
-
 #skill {
   color: #fff;
   background-color: #ffffff;
 }
-
 #contact {
   padding-top: 50px;
   height: 500px;
   color: #fff;
   background-color: #ff9800;
 }
-
-
 .links {
   font-family: CircularStdBook;
   font-size: 15px;
 }
-
 .desig1 {
   font-size: 4em;
   position: absolute;
@@ -93,10 +79,7 @@ body {
   z-index: 20;
   color: #ffffff;
   font-family: CircularStdBook;
-
 }
-
-
 .abt{
   font-family: Raleway;
   text-align:center;
@@ -135,7 +118,6 @@ body {
   font-family: CircularStdBook;
   padding-left:5%;
 }
-
 .content1{
   color: #000;
   font-size:3rem;
@@ -146,11 +128,7 @@ body {
 .content1:hover{
 color:#EFB311;
 }
-
-
-
 /* ------------------------START OF MEDIA QUERIES---------------------------------------------------------------------------------- */
-
 @media (max-width: 768px) {
   .navbar-right {
     margin-right: 47px !important;
@@ -163,24 +141,19 @@ color:#EFB311;
     flex-direction: column !important;
   }
  
-
 }
-
-
 @media only screen and (max-width: 600px) {
   .prof {
     left: 5px !important;
     width: 95% !important;
     height: 400px !important;
   }
-
   .desig1 {
     top: 512px !important;
     right: 0 !important;
     text-align: center;
     font-size: 3em !important;
   }
-
   .desig {
     text-align: center;
     font-size: 1.5em !important;
@@ -215,13 +188,11 @@ color:#EFB311;
  .pr-info{
   text-align: center !important;
   font-size:1.4rem !important;
-
  }
  .skl-tl{
   text-align: center !important;
   font-size:1.4rem !important;
 }
-
  .collection{
    width:100% !important;
  }
@@ -238,7 +209,6 @@ color:#EFB311;
 .profile-img{
   margin-top:-9% !important;
 }
-
 }
 @media screen and (max-width: 1024px){
   .gap{

@@ -41,7 +41,7 @@
     font-family: "Roboto",sans-serif;
   }
   .navbar-fixed nav {
-    background-color: #ba68c8;
+    background-color: #5587f9;
   }
   .ps {
       margin-right:10% !important;
@@ -54,7 +54,7 @@
     /* Keeps the content on a single line */
     margin: 0 auto;
     /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em;
+    letter-spacing: .10em;
     /* Adjust as needed */
     animation:
       typing 3.5s steps(30, end),
@@ -66,7 +66,7 @@
   }
   
 .btn, .btn-large{
-    background-color: #ba68c8 !important;
+    background-color: #5587f9 !important;
 
 }
 .aln{
@@ -82,25 +82,25 @@
 }
 
 .abt-me{
-    color:#ba68c8 ;
+    color:#5587f9 ;
     font-family: CircularStdMedium;
     font-size:2rem;
-    text-shadow: 1px 1px #ba68c8;
+    text-shadow: 1px 1px #5587f9;
     margin-top:7% !important;
     margin-left:5% !important;
 }
 .skl-tl{
-  color:#ba68c8 ;
+  color:#5587f9 ;
   font-family: CircularStdMedium;
   font-size:2rem;
-  text-shadow: 1px 1px #ba68c8;
+  text-shadow: 1px 1px #5587f9;
   margin-top:7% !important;
 }
 .pr-info{
-    color:#ba68c8 ;
+    color:#5587f9 ;
     font-family: CircularStdMedium;
     font-size:2rem;
-    text-shadow: 1px 1px #ba68c8;
+    text-shadow: 1px 1px #5587f9;
     margin-top:7% !important;
     margin-left:5% !important;
 
@@ -159,63 +159,63 @@ progress, progress[role] {
 
 
 .skill-1::-webkit-progress-value {
-  background: #ba68c8;
+  background: #5587f9;
 }
 
 .skill-1::-moz-progress-bar {
-  background: #ba68c8;
+  background: #5587f9;
 }
 
 .skill-2::-webkit-progress-value {
-  background: #ba68c8;
+  background: #5587f9;
 }
 
 .skill-2::-moz-progress-bar {
-  background: #ba68c8;
+  background: #5587f9;
 }
 
 .skill-3::-webkit-progress-value {
-  background: #ba68c8;
+  background: #5587f9;
 }
 
 .skill-3::-moz-progress-bar {
-  background: #ba68c8;
+  background: #5587f9;
 }
 .skill-4::-webkit-progress-value {
-  background: #ba68c8;
+  background: #5587f9;
 }
 
 .skill-4::-moz-progress-bar {
-  background: #ba68c8;
+  background: #5587f9;
 }
 .skill-5::-webkit-progress-value {
-  background: #ba68c8;
+  background: #5587f9;
 }
 
 .skill-5::-moz-progress-bar {
-  background: #ba68c8;
+  background: #5587f9;
 }
 .skill-6::-webkit-progress-value {
-  background: #ba68c8;
+  background: #5587f9;
 }
 
 .skill-6::-moz-progress-bar {
-  background: #ba68c8;
+  background: #5587f9;
 }
 
 .skill-7::-webkit-progress-value {
-  background: #ba68c8;
+  background: #5587f9;
 }
 
 .skill-7::-moz-progress-bar {
-  background: #ba68c8;
+  background: #5587f9;
 }
 .skill-8::-webkit-progress-value {
-  background: #ba68c8;
+  background: #5587f9;
 }
 
 .skill-8::-moz-progress-bar {
-  background: #ba68c8;
+  background: #5587f9;
 }
 
 
