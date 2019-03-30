@@ -272,12 +272,12 @@ progress, progress[role] {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #ba68c8;
+  background-color: #5587f9;
   color: white;
   cursor: pointer;
   padding: 15px;
   border-radius: 50%;
 }
 .page-footer{
-  background: #00000096 !important;
+  background: #5587f9 !important;
 }
